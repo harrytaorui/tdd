@@ -10,4 +10,13 @@ public class MommifierTest {
 		assertNull(momifier.momify(testString));
 	}
 
+	@Test
+	public void Test_String_With_No_Continuous_Vowels() {
+		String testString = "apple";
+		Momifier momifier = new Momifier();
+		assertEquals(momifier.momify(testString),testString);
+	}
+
+
+
 }
