@@ -24,4 +24,12 @@ public class MommifierTest {
 		assertEquals(momifier.momify(testString),testString);
 	}
 
+	@Test
+	public void Test_String_With_Continuous_Vowels_More_Than_30_Percent() {
+		String testString = "booklist";
+		Momifier momifier = new Momifier();
+		assertEquals(momifier.momify(testString),"bomommyoklist");
+	}
+
+
 }
